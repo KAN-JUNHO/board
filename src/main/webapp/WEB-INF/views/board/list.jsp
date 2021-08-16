@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>insert title here</title>
+<title>게시물 목록</title>
 </head>
 <body>
 	<table>
@@ -19,7 +19,15 @@
 	 </thead>
 	 
 	 <tbody>
-	  
+	  	<c:forEach items="${list}" var="list">
+	 <tr>
+		 <td>${list.bno}</td>
+		 <td>${list.title}</td>
+		 <td>${list.regDate}</td>
+		 <td>${list.writer}</td>
+		 <td>${list.viewCnt}</td>
+	 </tr>
+		</c:forEach>
 	 </tbody>
 	
 	</table>
