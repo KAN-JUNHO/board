@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 
 import com.board.domain.BoardVO;
 import com.board.service.BoardService;
@@ -41,5 +42,12 @@ public class BoardController {
 	  service.write(vo);
 	  
 	  return "redirect:/board/list";
+	}
+	
+	//게시물 조회
+	@GetMapping("/view")
+	public void getView(@RequestParam("bno") int bno, Model model) throws Exception{
+		BoardVO vo = service.view(bno);
+		model.addAttribute("view",vo);
 	}
 }
