@@ -1,5 +1,9 @@
+<<<<<<< HEAD
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+=======
+<%@ page language="java" contentType="text/html; charset=UTF-8"pageEncoding="UTF-8"%>
+>>>>>>> branch 'master' of https://github.com/KAN-JUNHO/board.git
 <!DOCTYPE html>
 <html>
 <head>

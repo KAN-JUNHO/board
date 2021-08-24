@@ -22,7 +22,13 @@
 	  	<c:forEach items="${list}" var="list">
 	 <tr>
 		 <td>${list.bno}</td>
+<<<<<<< HEAD
 		 <td>${list.title}</td>
+=======
+		 <td>
+		 	<a href="/board/view?bno=${list.bno}">${list.title}</a>
+		 </td>
+>>>>>>> branch 'master' of https://github.com/KAN-JUNHO/board.git
 		 <td>${list.regDate}</td>
 		 <td>${list.writer}</td>
 		 <td>${list.viewCnt}</td>
