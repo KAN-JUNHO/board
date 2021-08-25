@@ -15,22 +15,6 @@ public class BoardDAOImpl implements BoardDAO{
 	@Inject
 	private SqlSession sql;
 	
-<<<<<<< HEAD
-	private static String namesapce = "com.board.mappers.board";
-	
-	//게시물 목록
-	@Override
-	public List<BoardVO> list() throws Exception {
-		return sql.selectList(namesapce + ".list");
-	}
-
-	//게시물 작성
-	@Override
-	public void write(BoardVO vo) throws Exception {
-		sql.insert(namesapce + ".write", vo);	
-	}
-
-=======
 	private static String namespace = "com.board.mappers.board";
 	
 	//게시물 목록
@@ -58,5 +42,4 @@ public class BoardDAOImpl implements BoardDAO{
 	}
 
 	
->>>>>>> branch 'master' of https://github.com/KAN-JUNHO/board.git
 }

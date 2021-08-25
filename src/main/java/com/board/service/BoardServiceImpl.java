@@ -26,8 +26,6 @@ public class BoardServiceImpl implements BoardService{
 	public void write(BoardVO vo) throws Exception {
 		dao.write(vo);
 	}
-<<<<<<< HEAD
-=======
 	
 	//게시물 조회
 	@Override
@@ -42,6 +40,5 @@ public class BoardServiceImpl implements BoardService{
 	}
 	
 
->>>>>>> branch 'master' of https://github.com/KAN-JUNHO/board.git
 }
 

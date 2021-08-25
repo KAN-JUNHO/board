@@ -16,8 +16,6 @@
 		  		values(#{title}, #{content}, #{writer})
 	</insert>
 		
-<<<<<<< HEAD
-=======
 	<!-- 게시물 조회 -->
 	<select id="view" parameterType="int" resultType="com.board.domain.BoardVO">
 		SELECT
@@ -38,5 +36,4 @@
 		   writer = #{writer}
 		where bno = #{bno}
 	</update>
->>>>>>> branch 'master' of https://github.com/KAN-JUNHO/board.git
 </mapper>
